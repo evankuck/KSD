@@ -8,7 +8,16 @@
 </head>
 <body>
 <script>
-  //Starting out new script on piece of shit laptop
+const pressed = [];
+const secretCode = 'Evan';
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+  if pressed.join
+  console.log(pressed);
+
+})
 </script>
 </body>
 </html>
